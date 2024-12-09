@@ -28,12 +28,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.hiennv.flutter_callkit_incoming'
     compileSdk 34
-
-    if (project.android.hasProperty("namespace")) {
-        namespace "com.hiennv.flutter_callkit_incoming"
-    }
-
     compileOptions {
         // Flag to enable support for the new language APIs
         coreLibraryDesugaringEnabled true
